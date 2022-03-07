@@ -24,7 +24,6 @@ public class ObEjSpringApplication {
 		myRepository.save(new User(null,"Davide","Fragnito","davidepie90@gmail.com","Hombre", LocalDate.of(1990,10,20),true));
 		myRepository.save(new User(null,"Pablo","Lopez","lopez.pablo@gmail.com", "Hombre", LocalDate.of(1988,12,24),true));
 		myRepository.save(new User(null,"María", "Rodriguez","m.rodri@gmail.com", "Mujer", LocalDate.of(1995,5,19),true));
-
 	}
 
 }

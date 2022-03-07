@@ -7,6 +7,52 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     /**
+     * Mensaje Hola mundo
+     * http://localhost:8081/hola
+     * @return
+     */
+    @GetMapping("/hola")
+    public String holamundo(){
+        return "¡Hola mundo!";
+    }
+
+    @GetMapping("/")
+    public String home() {
+        return """
+                		<html>
+                    <head>
+                        <meta description="Api en Spring de Diabolik">
+                        <title>Diabolik Home</title>
+                        <style>
+                            .foot{
+                                position: absolute;
+                                text-align: center;
+                                width: 99%;
+                                bottom: 20px;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                    <ul>
+                        <li><a href="/hola" target="Hola Mundo" class="list">hola()</a></li>
+                		<li><a href="/api/users" target="findall" class="list">findAll()</a></li>
+                		<ul>
+                            <li><a href="/api/users/1" target="findOnById" class="list">findOnById()</a></li>
+                        </ul>
+                		<li><a href="/easteregg" target="easteregg" class="list">OnlyOneUserCanSeeThis</a></li>
+                	</ul>
+
+                         <footer class="foot">
+                            Copyright &copy; Proyecto Open BootCamp Davide Pietro Fragnito
+                        </footer>
+                    </body>
+
+                </html>
+                		""";
+    }
+
+
+    /**
      * Easter egg message
      * http://localhost:8081/easteregg
      * @return

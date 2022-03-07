@@ -2,7 +2,6 @@ package com.example.ob_ejSpring.controller;
 
 import com.example.ob_ejSpring.entities.User;
 import com.example.ob_ejSpring.repositori.UserRepository;
-import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import org.slf4j.Logger;

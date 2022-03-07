@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "e2fa2b68-1d9d-42b1-94fe-a708cbf60fee",
+		"_postman_id": "94cf91d8-9f41-4ef1-836d-0255e0424a85",
 		"name": "Ejercicios_Rest",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -124,6 +124,14 @@
 						"users"
 					]
 				}
+			},
+			"response": []
+		},
+		{
+			"name": "/easteregg",
+			"request": {
+				"method": "GET",
+				"header": []
 			},
 			"response": []
 		}
